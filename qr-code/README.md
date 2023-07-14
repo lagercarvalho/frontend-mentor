@@ -30,8 +30,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend mentor solution URL](https://www.frontendmentor.io/solutions/responsive-page-using-css-only-EnK1BuHE2s)
+- Live Site URL: [Live site URL](https://qr-code-alpha-hazel.vercel.app/)
 
 ## My process
 
