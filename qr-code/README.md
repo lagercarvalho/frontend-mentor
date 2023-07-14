@@ -19,11 +19,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Overview
 
-### Screenshot
+### Screenshots
 
-![My desktop solution](/images/desktop.png)
+#### Desktop
+<img src="images/desktop.png" alt="My desktop solution"/>
 
-![My mobile solution](/images/mobile.png)
+#### Mobile
+<img src="images/mobile.png" alt="My desktop solution" height=800px/>
+
 
 ### Links
 
