@@ -55,10 +55,11 @@ button{
     justify-content: center;
     align-items: start;
     gap: 25px;
-    width: 400px;
+    max-width: 400px;
     background-color: var(--rating-background);
     border-radius: 20px;
     padding: 30px;
+    margin-inline: 20px;
 }
 
 .star {
@@ -124,11 +125,12 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    width: 400px;
+    gap: 30px;
+    max-width: 400px;
     background-color: var(--rating-background);
     border-radius: 20px;
     padding: 45px 30px;
+    margin-inline: 20px;
 }
 
 .confirmation .rating-display {
