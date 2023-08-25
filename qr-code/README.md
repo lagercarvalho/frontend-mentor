@@ -15,14 +15,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshots
 
 #### Desktop
-<img src="images/desktop.png" alt="My desktop solution"/>
+<img src="images/desktop.jpeg" alt="My desktop solution"/>
 
 #### Mobile
 <img src="images/mobile.png" alt="My desktop solution" height=800px/>
