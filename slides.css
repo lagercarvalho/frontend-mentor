@@ -1,10 +1,9 @@
 .slideshow-container {
-  height: 500px;
-  width: 700px;
+  max-width: 700px;
+  aspect-ratio: 7 / 5;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
 }
 
 .slide {
