@@ -1,4 +1,5 @@
-const currentDate = new Date();
+var currentDate = new Date();
+currentDate.setHours(0, 0, 0, 0);
 var dayLabel = document.querySelector('#day-fields').querySelector('label');
 var dayInput = document.querySelector('#day-fields').querySelector('input');
 var dayError = document.querySelector('#day-fields').querySelector('p');
@@ -81,10 +82,12 @@ function animateCounter(span, endValue) {
   let startValue = 0;
   let duration = Math.floor(interval / endValue);
   let counter = setInterval(function () {
-    startValue += 1;
-    span.textContent = startValue;
     if (startValue === endValue) {
       clearInterval(counter);
+    } else {
+      startValue += 1;
     }
+    span.textContent = startValue;
+    
   }, duration);
 }
