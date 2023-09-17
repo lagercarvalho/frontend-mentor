@@ -36,6 +36,23 @@ body {
   flex-direction: column;
   height: 100%;
   width: 600px;
+  margin-inline: 10px;
+  padding-block: 50px;
+}
+
+@media (max-width: 650px) {
+  body {
+    font-size: 15px;
+  }
+  .container{
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 13px;
+  }
 }
 
 .balance-overview {
@@ -60,11 +77,12 @@ body {
   align-items: end;
   padding-bottom: 20px;
   border-bottom: solid 2px var(--neutral-3);
-  height: 300px;
+  height: 285px;
 }
 
 .chart-day {
   text-align: center;
+  width: min(calc(100% / 8), 60px);
 }
 
 .chart-day p{
@@ -74,22 +92,23 @@ body {
 }
 
 .chart-column {
-  height: 180px;
-  width: 60px;
+  height: 0px;
+  width: 100%;
   background-color: var(--primary-1);
   border-radius: 10px;
   position: relative;
+  justify-content: center;
 }
 
 .column-description {
   position: absolute;
-  top: -51px;
-  left: -9px;
+  top: -3.2rem;
   background-color: var(--neutral-1);
   color: var(--neutral-4);
   font-weight: 700;
   padding: 10px;
   border-radius: 5px;
+  z-index: 1;
   display: none;
 }
 
@@ -113,7 +132,6 @@ body {
 }
 
 .chart-description h1{
-  font-size: 45px;
   margin-bottom: -10px;
 }
 
