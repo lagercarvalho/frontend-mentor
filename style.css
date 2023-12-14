@@ -12,6 +12,7 @@
 
 html {
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,6 +47,7 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   padding: 25px;
+  overflow: hidden;
 }
 
 .reverse-background {
@@ -89,6 +91,21 @@ section {
   font-size: 55px;
 }
 
+@media (max-width: 800px) {
+  .heading p {
+    font-size: 1rem;
+  }
+  
+  .heading h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  .heading h2 {
+    font-size: 2.5em;
+  }
+}
+
 .preview-img {
   max-width: 700px;
   aspect-ratio: 7 / 5;
@@ -111,10 +128,12 @@ section {
 
 .active.fade-left {
   animation: fade-left 1s ease;
+  overflow: hidden;
 }
 
 .active.fade-right {
   animation: fade-right 1s ease;
+  overflow: hidden;
 }
 
 @keyframes fade-left {
@@ -138,3 +157,4 @@ section {
     opacity: 1;
   }
 }
+
