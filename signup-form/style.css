@@ -22,7 +22,7 @@ body {
     position: relative;
     padding-bottom: 5px;
     font-size: 16px;
-    height: 100vh;
+    height: 100dvh;
     background-image: url("./images/bg-intro-desktop.png");
     background-color: var(--primary-1);
     color: white;
@@ -97,7 +97,7 @@ body {
     box-shadow: 0px 7px var(--neutral-1-dim);
 }
 
-.note span{
+.note span {
     font-weight: 600;
 }
 
@@ -130,11 +130,11 @@ body {
     color: var(--primary-1);
 }
 
-.signup-form .email-text::placeholder{
+.signup-form .email-text::placeholder {
     color: var(--primary-1);
 }
 
-.signup-form input{
+.signup-form input {
     padding: 15px 20px;
     border-radius: 5px;
     border: solid 1px var(--neutral-1-dim);
@@ -142,17 +142,17 @@ body {
     color: var(--neutral-1);
 }
 
-.signup-form input::placeholder{
+.signup-form input::placeholder {
     color: var(--neutral-1-dim);
     font-weight: 600;
 }
 
-.signup-form input:focus{
+.signup-form input:focus {
     outline: none;
     border: solid 1px var(--accent-1);
 }
 
-.signup-form button{
+.signup-form button {
     color: white;
     border: none;
     background-color: var(--primary-2);
@@ -165,16 +165,16 @@ body {
     font-weight: 500;
 }
 
-.signup-form button:hover{
+.signup-form button:hover {
     cursor: pointer;
 }
 
-.footnote{
+.footnote {
     font-size: 11px;
     text-align: center;
 }
 
-.footnote span{
+.footnote span {
     color: var(--primary-1);
     font-weight: 700;
 }
@@ -186,6 +186,6 @@ body {
     bottom: 10px;
 }
 
-.attribution a { 
+.attribution a {
     color: hsl(228, 45%, 44%);
 }

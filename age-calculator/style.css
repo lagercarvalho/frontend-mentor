@@ -17,9 +17,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
   background-color: var(--neutral-3);
-  height: 100vh;
+  height: 100dvh;
   position: relative;
 }
 
@@ -93,7 +93,7 @@ body{
   font-size: 25px;
 }
 
-.calculator form input::placeholder{
+.calculator form input::placeholder {
   font-size: 25px;
 }
 
@@ -108,7 +108,7 @@ body{
     font-size: 17px;
   }
 
-  .calculator form input::placeholder{
+  .calculator form input::placeholder {
     font-size: 17px;
   }
 }
@@ -147,7 +147,7 @@ body{
   padding-top: 20px;
 }
 
-.calculator .result p{
+.calculator .result p {
   color: var(--neutral-5);
   font-weight: 800;
   font-style: italic;
@@ -156,25 +156,25 @@ body{
 }
 
 @media (max-width: 650px) {
-  .calculator .result p{
+  .calculator .result p {
     font-size: 14vw;
     line-height: 4.5rem;
     padding-top: 25px;
   }
 }
 
-.calculator .result span{
+.calculator .result span {
   color: var(--primary-1);
   margin-right: 10px;
 }
 
-.attribution { 
+.attribution {
   font-size: 11px;
   text-align: center;
   position: absolute;
   bottom: 10px;
 }
 
-.attribution a { 
+.attribution a {
   color: hsl(228, 45%, 44%);
 }

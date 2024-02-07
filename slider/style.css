@@ -11,8 +11,8 @@
   --primary-2: hsl(240, 18%, 77%);
 }
 
-body{
-  height: 100vh;
+body {
+  height: 100dvh;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ svg {
   position: absolute;
 }
 
-body > svg {
+body>svg {
   bottom: 0;
   left: 0;
 }
