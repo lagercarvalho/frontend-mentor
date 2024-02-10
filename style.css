@@ -18,6 +18,7 @@ html {
 body {
   color: var(--neutral-font-1);
   font-family: "Poppins", sans-serif;
+  background-color: #151e70;
 }
 
 a {
@@ -46,7 +47,6 @@ a {
 
 section {
   height: 100dvh;
-  background: rgb(38, 166, 212);
   background: linear-gradient(0deg, rgba(38, 166, 212, 1) 0%, rgba(35, 65, 201, 1) 50%, rgb(21, 30, 112) 100%);
   scroll-snap-align: start;
   scroll-snap-stop: always;
