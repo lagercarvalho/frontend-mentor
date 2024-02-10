@@ -34,7 +34,6 @@ body {
     background-color: var(--clr-neutral-light-gray);
     font-family: var(--font-family-default);
     font-size: 15px;
-    height: 100dvh;
     position: relative;
     padding-bottom: 5px;
 }

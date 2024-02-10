@@ -20,18 +20,19 @@
 
 body {
     position: relative;
-    padding-bottom: 5px;
     font-size: 16px;
-    height: 100dvh;
     background-image: url("./images/bg-intro-desktop.png");
     background-color: var(--primary-1);
+    min-height: 100dvh;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 900px) {
     body {
         background-image: url("./images/bg-intro-mobile.png");
-        height: 100%;
     }
 }
 
@@ -184,6 +185,7 @@ body {
     font-size: 11px;
     text-align: center;
     bottom: 10px;
+    width: 100%;
 }
 
 .attribution a {
