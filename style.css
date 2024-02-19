@@ -19,6 +19,7 @@ body {
   color: var(--neutral-font-1);
   font-family: "Poppins", sans-serif;
   background-color: #151e70;
+  overflow-x: hidden;
 }
 
 a {
