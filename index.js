@@ -14,18 +14,4 @@ function reveal() {
   }
 }
 
-function handleScroll(event) {
-  var scrollTop = event.target.scrollTop;
-  var maxScrollHeight = event.target.scrollHeight - event.target.clientHeight;
-  console.log(event);
-
-  if (scrollTop <= 0) {
-    event.target.scrollTop = 1;
-    console.log("Top");
-  } else if (scrollTop >= maxScrollHeight) {
-    event.target.scrollTop = maxScrollHeight - 1;
-    console.log("Bottom");
-  }
-}
-
 window.addEventListener("scroll", reveal);
