@@ -19,43 +19,121 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.container {
-  position: relative;
-  padding: 40px;
-  padding-left: 50px;
+img, svg {
+  display: block;
 }
 
+.container {
+  display: flex;
+  position: relative;
+  padding: 40px;
+  width: 100%;
+  justify-content: center;
+}
 
-body>svg {
+.slideshow-container {
+  position: relative;
+  max-width: 697px;
+  min-width: 550px;
+  width: 100%;
+  aspect-ratio: 697/661;
+  min-height: 200px;
+}
+
+.slideshow-container>svg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  z-index: 1;
+  height: 75%;
+  aspect-ratio: 1/1;
+}
+
+.image img {
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px hsla(249, 10%, 26%, 0.25);
+  width: 100%;
+  height: 100%;
+}
+
+.bot-svg {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: min(70%, 610px);
+  aspect-ratio: 610/154;
 }
 
 .flex-flow {
   display: flex;
 }
 
-.quotes {
+.quote-container {
   align-items: center;
-  position: relative;
-  width: 650px;
+  max-width: 650px;
+  margin-inline: 7.43% -11.15%;
+  z-index: 2;
 }
 
-.quotes svg {
+.cite {
   position: absolute;
-  top: 120px;
-  left: 40px;
+  top: -70px;
+  left: 100px;
+  max-width: 120px;
+  aspect-ratio: 120/100;
 }
 
 .quote {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   gap: 40px;
+  margin-top: 50px;
 }
 
 .quote p {
   font-size: 32px;
   font-weight: 300;
+}
+
+.primary-2 {
+  color: var(--primary-2);
+  font-weight: 500;
+}
+
+.name {
+  gap: 10px;
+}
+
+.slider {
+  width: min(115px, 35%);
+  aspect-ratio: 115/58;
+  position: absolute;
+  justify-content: space-between;
+  box-shadow: 1px 7px 7px hsla(249, 10%, 26%, 0.25);
+  background-color: white;
+  border-radius: 29px;
+  bottom: 0;
+  transform: translate(50%,50%);
+}
+
+.slider-button {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-button>svg {
+  width: 20%;
+  aspect-ratio: 12/18;
 }
 
 .attribution {
@@ -67,4 +145,111 @@ body>svg {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .quote-container{
+    margin-inline: 100px -150px;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    align-items: start;
+  }
+
+  .quote p {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  body>.flex-flow {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .container {
+    padding: 20px 20px 15% 20px;
+    height: 100%;
+  }
+
+  .quote-container {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .cite {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+  }
+
+  .quote {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .name {
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .slideshow-container {
+    max-width: 600px;
+    min-width: 0px;
+  }
+
+  .slider {
+    left: 50%;
+    transform: translate(-50%,50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .quote p {
+    font-size: 22px;
+  }
+
+  .attribution{
+    font-size: 10px;
+  }
+
+  .quote {
+    margin-top: 30px;
+  }
+
+  .cite {
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .quote p {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .attribution{
+    font-size: 9px;
+  }
+
+  .cite {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+  }
 }

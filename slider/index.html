@@ -14,48 +14,80 @@
 
 <body class="flex-flow">
   <div class="container flex-flow">
-    <div class="quotes flex-flow">
-      <svg xmlns="http://www.w3.org/2000/svg" width="120" height="100">
-        <defs>
-          <linearGradient id="a" x1="31.368%" x2="100%" y1="72.917%" y2="19.557%">
-            <stop offset="0%" stop-color="#9975D0" />
-            <stop offset="100%" stop-color="#4A3FDB" />
-          </linearGradient>
-        </defs>
-        <path fill="url(#a)" fill-rule="evenodd" d="M52.615 0L24.858 100H0V0h52.615zM120 0L92.243 100H67.385V0H120z"
-          opacity=".15" />
-      </svg>
-      <div class="quote" id="quote-1">
+
+    <div class="quote-container flex-flow">
+      <div class="quote">
+        <svg class="cite" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="a" x1="31.368%" x2="100%" y1="72.917%" y2="19.557%">
+              <stop offset="0%" stop-color="#9975D0" />
+              <stop offset="100%" stop-color="#4A3FDB" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#a)" fill-rule="evenodd" d="M52.615 0L24.858 100H0V0h52.615zM120 0L92.243 100H67.385V0H120z"
+            opacity=".15" />
+        </svg>
         <p>
           “ I’ve been interested in coding for a while but never taken the jump, until now.
           I couldn’t recommend this course enough. I’m now in the job of my dreams and so
           excited about the future. ”
         </p>
 
-        <h3><span>Tanya Sinclair</span> UX Engineer</h3>
+        <div class="name flex-flow">
+          <h3>Tanya Sinclair</h3>
+          <h3 class="primary-2">UX Engineer</h3>
+        </div>
 
       </div>
-      <div class="quote" id="quote-2" style="display: none;">
+
+      <div class="quote">
+        <svg class="cite" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="c" x1="31.368%" x2="100%" y1="72.917%" y2="19.557%">
+              <stop offset="0%" stop-color="#9975D0" />
+              <stop offset="100%" stop-color="#4A3FDB" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#c)" fill-rule="evenodd" d="M52.615 0L24.858 100H0V0h52.615zM120 0L92.243 100H67.385V0H120z"
+            opacity=".15" />
+      </svg>
+      
         <p>
           “ If you want to lay the best foundation possible I’d recommend taking this course.
           The depth the instructors go into is incredible. I now feel so confident about
           starting up as a professional developer. ”
         </p>
 
-        <h4><span>John Tarkpor</span> Junior Front-end Developer</h4>
+        <div class="name flex-flow">
+          <h3>John Tarkpor</h3>
+          <h3 class="primary-2">Junior Front-end Developer</h3>
+        </div>
       </div>
     </div>
 
-    <div class="slider">
-      <svg xmlns="http://www.w3.org/2000/svg" width="697" height="657">
+    <div class="slideshow-container">
+      <div class="image">
+        <img class="slide" src="images/image-tanya.jpg" alt="">
+        <img class="slide" src="images/image-john.jpg" alt="">
+
+        <a href="#" class="slider flex-flow">
+          <div class="slider-button flex-flow" onclick="nextSlide(-1)">
+            <svg viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/></svg>
+          </div>
+          <div class="slider-button flex-flow" onclick="nextSlide(1)">
+            <svg viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/></svg>
+          </div>
+        </a>
+      </div>
+      <svg viewBox="0 0 697 661" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="a" x1="31.368%" x2="100%" y1="70.497%" y2="22.772%">
+          <linearGradient id="b" x1="31.368%" x2="100%" y1="70.497%" y2="22.772%">
             <stop offset="0%" stop-color="#9975D0" />
             <stop offset="100%" stop-color="#4A3FDB" />
           </linearGradient>
         </defs>
         <g fill="none" fill-rule="evenodd">
-          <path fill="url(#a)"
+          <path fill="url(#b)"
             d="M233.996 231.082c-62.714 60.37 48.746 169.37 176.07 259.677 127.324 90.307 187.825 151.88 269.763 73.005 81.938-78.874 114.518-247.228 0-332.682-114.518-85.453-383.12-60.369-445.833 0z"
             transform="matrix(0 1 1 0 97 -97)" />
           <path fill="#F4F4FC"
@@ -73,15 +105,16 @@
     </div>
   </div>
 
-  <svg xmlns="http://www.w3.org/2000/svg" width="610" height="154">
+  <svg class="bot-svg" viewBox="0 0 610 154" xmlns="http://www.w3.org/2000/svg">
     <path fill="#F4F4FC" fill-rule="evenodd"
       d="M610 154C469.493 123.42 358.432 86.087 276.818 42S102.93-11.42 0 14v140h610z" />
   </svg>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://lagercarvalho.github.io/">Alexander Carvalho</a>.
   </div>
+  
+  <script src="index.js"></script>
 </body>
-
 </html>
